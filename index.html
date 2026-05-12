@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MENTOR project page: language-guided mission execution for real-world UAV autonomy." />
+
+  <meta property="og:title" content="MENTOR" />
+  <meta property="og:description" content="A Mission-Level Execution Architecture for LLM-Guided UAVs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="static/images/show.svg" />
+
+  <meta name="twitter:title" content="MENTOR" />
+  <meta name="twitter:description" content="A Mission-Level Execution Architecture for LLM-Guided UAVs." />
+  <meta name="twitter:image" content="static/images/show.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>MENTOR</title>
+
+  <link rel="icon" type="image/svg+xml" href="static/images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/index.css" />
+</head>
+
+<body>
+  <main class="page-shell">
+    <section class="hero-panel">
+      <div class="hero-content">
+        <h1 class="page-title">
+          <span class="title-acronym">MENTOR:</span>
+          A <span class="title-source">M</span>ission-Level
+          <span class="title-source">E</span>xecutio<span class="title-source">N</span>
+          Archi<span class="title-source">T</span>ecture
+          f<span class="title-source">OR</span> LLM-Guided UAVs
+        </h1>
+
+        <p class="author-line">
+          Jinze Yang<sup>1</sup>, Yi Cui<sup>1</sup>, Yuhang Liu<sup>1</sup>,
+          Zhen Li<sup>1</sup>, Haikuo Liu<sup>1</sup>, Changkun Du<sup>2</sup>
+        </p>
+
+        <p class="affiliation-line">
+          <sup>1</sup> FALCON Lab, Beijing Institute of Technology
+          <br />
+          <sup>2</sup> Intelligent Science &amp; Technology Academy Limited of CASIC
+        </p>
+
+        <div class="action-row" aria-label="Project links">
+          <a class="pill-link" href="#" data-coming-soon>Paper</a>
+          <a class="pill-link" href="#" data-coming-soon>Code</a>
+          <a class="pill-link" href="#demo">Video</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-stack">
+      <article class="content-card video-card" id="demo">
+        <div class="video-header">
+          <p class="section-label">Video</p>
+          <h2>Project Demonstration</h2>
+        </div>
+
+        <div class="video-frame">
+          <video controls muted autoplay loop playsinline poster="static/images/show.svg">
+            <source src="static/videos/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <p class="video-caption">
+          A real-world demonstration of language-guided multi-stage UAV mission execution.
+        </p>
+      </article>
+
+      <article class="content-card intro-card" data-lang-root data-current-lang="en">
+        <div class="intro-topbar">
+          <p class="section-label">Introduction</p>
+
+          <div class="lang-toggle" role="tablist" aria-label="Introduction language switch">
+            <button type="button" class="lang-button is-active" data-lang-button="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-button" data-lang-button="zh" aria-pressed="false">中文</button>
+          </div>
+        </div>
+
+        <div class="intro-copy is-active" data-lang-panel="en">
+          <h2>A Mission-Level Execution Architecture for LLM-Guided UAVs.</h2>
+
+          <p>
+            MENTOR enables UAVs to execute natural-language missions in real-world environments by connecting
+            high-level semantic reasoning with reliable flight autonomy. The system compiles user commands
+            into structured mission states and manages task progress through a guarded mission executive.
+          </p>
+
+          <p>
+            During execution, MENTOR integrates online visual evidence and skill feedback, then grounds
+            validated stage-level decisions into typed UAV skills such as search, navigation, observation,
+            localization, return, and recovery. This design allows large language models to reason over
+            evolving mission contexts while mature autonomy modules handle flight-critical execution.
+          </p>
+
+          <p>
+            We implement MENTOR on a real UAV platform and evaluate it through multi-stage natural-language
+            missions, demonstrating coherent mission context maintenance, heterogeneous skill coordination,
+            and evidence-based stage transitions in real time.
+          </p>
+        </div>
+
+        <div class="intro-copy" data-lang-panel="zh" lang="zh-CN">
+          <h2>让无人机从自然语言任务走向真实飞行执行。</h2>
+
+          <p>
+            MENTOR 面向真实无人机自主任务，将自然语言指令转化为结构化任务状态，并由任务中枢在飞行过程中持续管理任务推进、视觉证据和技能反馈。
+          </p>
+
+          <p>
+            系统把大语言模型的语义推理能力放在任务层级，底层搜索、导航、观察、定位、返航和恢复等飞行能力则由可靠的无人机技能模块完成。通过这种方式，MENTOR 能够在保持工程可部署性的同时支持更灵活的多阶段任务执行。
+          </p>
+
+          <p>
+            我们在真实无人机平台上验证了 MENTOR，展示了系统在多阶段自然语言任务中的上下文维护、技能协同和实时阶段转换能力。
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 FALCONxLAB. This page is built with GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll("[data-coming-soon]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.alert("Coming soon");
+      });
+    });
+
+    const introRoots = document.querySelectorAll("[data-lang-root]");
+
+    introRoots.forEach((root) => {
+      const buttons = root.querySelectorAll("[data-lang-button]");
+      const panels = root.querySelectorAll("[data-lang-panel]");
+
+      const setLanguage = (lang) => {
+        root.dataset.currentLang = lang;
+
+        buttons.forEach((button) => {
+          const isActive = button.dataset.langButton === lang;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.dataset.langPanel === lang);
+        });
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.langButton));
+      });
+    });
+  </script>
+</body>
+</html>

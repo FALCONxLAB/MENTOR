@@ -1,0 +1,27 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#111827"/>
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(380 220) rotate(45) scale(760)">
+      <stop stop-color="#B2542C" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#B2542C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 650) rotate(45) scale(760)">
+      <stop stop-color="#537F9E" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#537F9E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect width="1600" height="900" fill="url(#g2)"/>
+  <g opacity="0.12">
+    <path d="M0 100H1600M0 200H1600M0 300H1600M0 400H1600M0 500H1600M0 600H1600M0 700H1600M0 800H1600" stroke="white"/>
+    <path d="M100 0V900M200 0V900M300 0V900M400 0V900M500 0V900M600 0V900M700 0V900M800 0V900M900 0V900M1000 0V900M1100 0V900M1200 0V900M1300 0V900M1400 0V900M1500 0V900" stroke="white"/>
+  </g>
+  <g transform="translate(520 250)">
+    <rect x="0" y="0" width="560" height="320" rx="34" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+    <path d="M120 186L280 88L440 186" stroke="#F4EFE5" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M172 216H388L336 268H224L172 216Z" fill="#B2542C"/>
+    <circle cx="280" cy="186" r="30" fill="#F4EFE5"/>
+  </g>
+  <text x="800" y="670" text-anchor="middle" fill="#F4EFE5" font-family="Arial, sans-serif" font-size="64" font-weight="700">MENTOR</text>
+  <text x="800" y="730" text-anchor="middle" fill="#D1D5DB" font-family="Arial, sans-serif" font-size="28">Replace this poster with your real demo screenshot</text>
+</svg>
