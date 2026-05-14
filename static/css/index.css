@@ -224,11 +224,24 @@ a {
   font-weight: 800;
 }
 
+.intro-copy h3 {
+  margin: 26px 0 12px;
+  color: #111827;
+  font-size: 1.16rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
 .intro-copy p {
   margin: 0 0 16px;
   font-size: 1.03rem;
   line-height: 1.82;
   color: #374151;
+}
+
+.intro-copy strong {
+  color: #111827;
+  font-weight: 800;
 }
 
 .intro-copy p:last-child {

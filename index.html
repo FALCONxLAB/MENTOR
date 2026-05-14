@@ -85,41 +85,88 @@
         </div>
 
         <div class="intro-copy is-active" data-lang-panel="en">
-          <h2>A Mission-Level Execution Architecture for LLM-Guided UAVs.</h2>
-
           <p>
-            MENTOR enables UAVs to execute natural-language missions in real-world environments by connecting
-            high-level semantic reasoning with reliable flight autonomy. The system compiles user commands
-            into structured mission states and manages task progress through a guarded mission executive.
+            In complex real-world environments, enabling unmanned aerial vehicles (UAVs) to understand
+            natural-language instructions and execute them safely remains a central challenge.
           </p>
 
           <p>
-            During execution, MENTOR integrates online visual evidence and skill feedback, then grounds
-            validated stage-level decisions into typed UAV skills such as search, navigation, observation,
-            localization, return, and recovery. This design allows large language models to reason over
-            evolving mission contexts while mature autonomy modules handle flight-critical execution.
+            To address this problem, we redefine language-guided UAV autonomy as a
+            <strong>Mission-Level Execution</strong> problem and formally introduce the MENTOR architecture.
           </p>
 
           <p>
-            We implement MENTOR on a real UAV platform and evaluate it through multi-stage natural-language
-            missions, demonstrating coherent mission context maintenance, heterogeneous skill coordination,
-            and evidence-based stage transitions in real time.
+            MENTOR is an innovative UAV execution framework built around the principle of
+            <strong>decoupling reasoning from control while preserving closed-loop safety</strong>. It separates
+            high-level semantic reasoning from flight-critical low-level control, while maintaining a tightly
+            coupled closed-loop feedback interface between them.
+          </p>
+
+          <h3>✨ How it Works</h3>
+
+          <p>
+            <strong>🧠 Structured Mission States:</strong> The system parses complex natural-language
+            instructions and converts them into highly structured mission states.
+          </p>
+
+          <p>
+            <strong>🛡️ Guarded Mission Executive:</strong> During execution, MENTOR continuously integrates
+            online visual evidence and low-level skill feedback, providing reliable decision safeguards for
+            mission progress.
+          </p>
+
+          <p>
+            <strong>🚁 Typed UAV Skills:</strong> Validated stage-level decisions are precisely grounded into
+            a standardized library of UAV action skills.
+          </p>
+
+          <h3>🌟 Why MENTOR?</h3>
+
+          <p>
+            Through this architectural design, MENTOR establishes a clear division of labor between the
+            "brain" and the "cerebellum": it gives large language models (LLMs) substantial freedom to perform
+            adaptive, context-aware reasoning over evolving mission contexts, while returning flight-critical
+            responsibilities to reliable low-level autonomy modules. This fundamentally improves the safety
+            and consistency of UAV mission execution in the real world.
           </p>
         </div>
 
         <div class="intro-copy" data-lang-panel="zh" lang="zh-CN">
-          <h2>让无人机从自然语言任务走向真实飞行执行。</h2>
-
           <p>
-            MENTOR 面向真实无人机自主任务，将自然语言指令转化为结构化任务状态，并由任务中枢在飞行过程中持续管理任务推进、视觉证据和技能反馈。
+            在复杂的现实环境中，如何让 UAV 听懂人类的自然语言指令并安全执行，一直是一项核心挑战。
           </p>
 
           <p>
-            系统把大语言模型的语义推理能力放在任务层级，底层搜索、导航、观察、定位、返航和恢复等飞行能力则由可靠的无人机技能模块完成。通过这种方式，MENTOR 能够在保持工程可部署性的同时支持更灵活的多阶段任务执行。
+            为了解决这一问题，我们将语言引导的无人机自主控制重新定义为一个
+            <strong>Mission-Level Execution</strong> 问题，并正式推出 MENTOR 架构。
           </p>
 
           <p>
-            我们在真实无人机平台上验证了 MENTOR，展示了系统在多阶段自然语言任务中的上下文维护、技能协同和实时阶段转换能力。
+            MENTOR 是一种创新的无人机执行框架，其核心理念是
+            <strong>“解耦推理与控制，保持闭环与安全”</strong>。它成功地将高层级语义推理与涉及飞行安全的底层控制分离开来，同时维持了一个紧密耦合的闭环反馈接口。
+          </p>
+
+          <h3>✨ 核心机制</h3>
+
+          <p>
+            <strong>🧠 Structured Mission States：</strong>
+            系统能够解析复杂的自然语言指令，并将其转换为高度结构化的任务状态。
+          </p>
+
+          <p>
+            <strong>🛡️ Guarded Mission Executive：</strong>
+            在执行过程中，持续整合在线视觉证据与底层技能反馈，为任务的推进提供可靠的决策守护。
+          </p>
+
+          <p>
+            <strong>🚁 Typed UAV Skills：</strong>
+            将经过验证的阶段级决策，精准向下映射并落实到一组标准化的无人机动作技能库中。
+          </p>
+
+          <h3>🌟 为什么选择 MENTOR？</h3>
+
+          <p>
+            通过这种架构设计，MENTOR 实现了“大脑”与“小脑”的完美分工：赋予了 LLMs 在不断演进的任务上下文中，进行自适应、情境感知推理的极大自由度；同时，将飞行的重任交还给可靠的底层自主控制模块，从根本上确保了无人机在现实世界中执行任务的安全性和一致性。
           </p>
         </div>
       </article>
